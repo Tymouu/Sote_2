@@ -8,6 +8,8 @@ public class Aufgabe_1 {
 		
 		System.out.println("Test2");
 		
+		System.out.println("Test3");
+		
 
 	}
 
