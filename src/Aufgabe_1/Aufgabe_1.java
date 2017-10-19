@@ -6,6 +6,8 @@ public class Aufgabe_1 {
 
 		System.out.println("Test");
 		
+		System.out.println("Test2");
+		
 
 	}
 
