@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/JavaScript" src="./jquery-3.2.1.min.js"></script>
+ 
+<script>
+	function jqueryStart(){
+	    //1. Text austauschen
+	    //Dieser Block ersetzt die schon bekannte nachfolgende JS Anweisung
+	    //document.getElementById("JQ1").innerHTML("Neuer Wert");
+	    $("#JQ1").html("Neuer Wert!");
+	     
+	    //2. Elemente einfügen
+	    $("#JQ2").append("Angehängter Text");
+	     
+	    //3. Formatierung ändern / Klasse austauschen
+	    $("p").addClass("stefano");
+	     
+	    //4. Animationen
+	    $("h1").slideUp(); //Text klappt nach oben
+	     
+	    $("#JQ2").animate({height:"300px", fontSize:"20px"});
+	}
+</script>
+
+</head>
+
+<body>
+
+	<h1>Mit JQuery arbeiten</h1>
+	<p id="JQ1">Alter Text</p>
+	<p id="JQ2">Alter Text Nummer 2</p>
+	
+	<input type="button" onclick="jqueryStart()" value="bitte hier drücken"/>
+	
+</body>
+</html>
