@@ -3,15 +3,92 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style_3.css">
 <meta charset="ISO-8859-1">
+<script type="text/javascript">
+						
+			function manipulateTree2() {
+				var newText = document.getElementById("inputtext").value;
+				var node = document.createElement("h5");
+				var textNode = document.createTextNode(newText);
+				node.appendChild(textNode);
+				document.getElementById("exchange").appendChild(node);
+			}
+			
+			function plus() {
+				var Wert1 = document.getElementById("Eingabe1").value;
+				var Wert2 = document.getElementById("Eingabe2").value;
+				/* alert("Eingabe" + Wert1 + Wert2); */
+				var Ergebnis = Wert1 + Wert2; /*WIE GEHT PLUS?????*/
+				/* alert("Eingabe" + Ergebnis); */
+				var node = document.createElement("h5");
+				var erg = document.createTextNode(Ergebnis);
+				node.appendChild(erg);
+				document.getElementById("Ergebnis").appendChild(node);
+			}
+			function minus() {
+				var Wert1 = document.getElementById("Eingabe1").value;
+				var Wert2 = document.getElementById("Eingabe2").value;
+				var Ergebnis = Wert1 - Wert2;
+				var node = document.createElement("h5");
+				var erg = document.createTextNode(Ergebnis);
+				node.appendChild(erg);
+				document.getElementById("Ergebnis").appendChild(node);
+			}
+			function mal() {
+				var Wert1 = document.getElementById("Eingabe1").value;
+				var Wert2 = document.getElementById("Eingabe2").value;
+				var Ergebnis = Wert1 * Wert2;
+				var node = document.createElement("h5");
+				var erg = document.createTextNode(Ergebnis);
+				node.appendChild(erg);
+				document.getElementById("Ergebnis").appendChild(node);
+			}
+			function geteilt() {
+				var Wert1 = document.getElementById("Eingabe1").value;
+				var Wert2 = document.getElementById("Eingabe2").value;
+				var Ergebnis = Wert1 / Wert2;
+				var node = document.createElement("h5");
+				var erg = document.createTextNode(Ergebnis);
+				node.appendChild(erg);
+				document.getElementById("Ergebnis").appendChild(node);
+			}
+		</script>
+
 <title>Aufgabe 3</title>
+
 </head>
+
 <body>
 	<h1>Aufgabe 3</h1>
+	
+	<script type="text/javascript">document.write("");</script>
+		<input type="text" id="inputtext">
+		<input type="button" onclick="manipulateTree2()" value="start">
+		<div id="exchange">Hier kommt der Text hin:</div>
+	
+	<h1>Taschenrechner - 3 a)</h1>
+	
+	<script type="text/javascript">document.write("");</script>
+		<input type="text" id="Eingabe1">
+		<input type="text" id="Eingabe2">
+		<p></p>
+		<input type="button" onclick="plus()" value="Plus">
+		<input type="button" onclick="minus()" value="Minus">
+		<input type="button" onclick="mal()" value="Mal">
+		<input type="button" onclick="geteilt()" value="Geteilt">
+		<div id="Ergebnis">Hier steht nachher das Ergebnis:</div>
 
-	<p><input type="text"> <input type="submit" value="abschicken"></p>
 	
 	
-	<script type="text/javascript">document.write("<p>Neuer Text<\/p>");</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<h1>Google Suche:</h1>
 	
@@ -22,5 +99,8 @@
 			<button>finden</button>
 		</p>
 	</form>
+	
+	
 </body>
+
 </html>
